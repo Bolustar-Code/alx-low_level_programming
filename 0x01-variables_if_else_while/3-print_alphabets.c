@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	char lowercase; 
-	char uppercase;
+	char lowercase;
+	char lowercase;
 
 	for (lowercase = 'a' ; lowercase <= 'z' ; lowercase++)
 	{
