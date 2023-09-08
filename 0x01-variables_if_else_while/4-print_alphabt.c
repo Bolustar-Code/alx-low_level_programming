@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-
 /**
- * A program that prints the alphabet in lowercase, except q and e
- * main the stating point
- * Return 0 each time
+ * main - Entry point
+ *
+ *Purpose- a program that prints the alphabet in lowercase less q&e
+ * Return: each time 0
  */
 
 int main(void)
@@ -21,4 +21,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
- }
+}
