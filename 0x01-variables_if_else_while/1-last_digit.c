@@ -4,7 +4,7 @@
 /**
  * main - Entry point
  *
- *Purpose: This program assigns a random number to the variable n each time it is executed
+ *Purpose: This program assigns a random number to the variable n
  * Return: each time 0
  */
 int main(void)
