@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- *A program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
- * main:the starting point
+ * Purpose a program that prints the alphabet in lowercase, 
+ * and then in uppercase, followed by a new line.
+ * main - Entry poin
  * Return 0 each time
  */
 
