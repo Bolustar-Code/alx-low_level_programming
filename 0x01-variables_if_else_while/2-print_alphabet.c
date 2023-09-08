@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * Purpose: A program that prints the alphabet in lowercase, 
- * followed by a new line
  * main - Entry point
- * Return each time 0
+ * Purpose-A program that prints the alphabet in lowercase
+ *
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
@@ -18,4 +18,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
