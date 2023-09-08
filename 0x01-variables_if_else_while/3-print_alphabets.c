@@ -2,16 +2,14 @@
 
 /**
  * main - Entry point
- * Write a program that prints the alphabet in lowercase, 
- * and then in uppercase, followed by a new line.
+ * Write a program that prints the alphabet in lowercase and uppercase
  *
  * Return: each time 0
  */
 
 int main(void)
 {
-	char lowercase;
-        char uppercase;
+	char lowercase; char uppercase;
 
 	for (lowercase = 'a' ; lowercase <= 'z' ; lowercase++)
 	{
