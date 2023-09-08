@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 /**
- * Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
- * main -the starting  point
- * Return 0 each time
+ * main - Entry point
+ * Purpose- program that prints all single digit numbers of base 10 from 0
+ * Return: each time 0
  */
 
-int main(void) 
+int main(void)
 {
-    int n = 0;
+	int x;
 
-    while (n <= 9) 
-    {
-	    printf("%d", n);
-        n++;
-    }
-
-    putchar('\n');
-
-    return 0;
+	for (x = 0 ; x < 10 ; x++)
+	{
+		printf("%d", x);
+	}
+	putchar('\n');
+	return (0);
 }
