@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * Purpose - program that prints all the numbers of base 16
- * main: entry point
- * Return 0 each time
+ * main - Entry point
+ *Purpose- program that prints all the numbers of base 16 in lc
+ *
+ * Return: Always 0 (Sucess)
  */
 
 int main(void)
@@ -18,7 +19,7 @@ int main(void)
 		}
 		else
 		{
-			putchar(87 +x);
+			putchar(87 + x);
 		}
 	}
 	putchar('\n');
