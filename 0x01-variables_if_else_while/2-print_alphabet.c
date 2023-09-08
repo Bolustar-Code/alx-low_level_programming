@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 /**
- * Purpose: A program that prints the alphabet in lowercase, followed by a new line
- * main:The starting point of the program
- * Return (0) eachtime
+ * Purpose: A program that prints the alphabet in lowercase, 
+ * followed by a new line
+ * main - Entry point
+ * Return each time 0
  */
 
 int main(void)
