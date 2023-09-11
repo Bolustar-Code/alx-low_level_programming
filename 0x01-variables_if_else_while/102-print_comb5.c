@@ -7,14 +7,20 @@
  */
 int main(void)
 {
-	for (int x = 0; x <= 99; x++)
+	int x;
+	int y;
+	int x_tens;
+	int x_ones;
+	int y_tens;
+	int y_ones;
+	for (x = 0; x <= 99; x++)
 	{
-		for (int y = x; y <= 99; y++)
+		for (y = x; y <= 99; y++)
 		{
-			int x_tens = x / 10;
-			int x_ones = x % 10;
-			int y_tens = y / 10;
-			int y_ones = y % 10;
+			x_tens = x / 10;
+			x_ones = x % 10;
+			y_tens = y / 10;
+			y_ones = y % 10;
 			putchar(x_tens + '0');
 			putchar(x_ones + '0');
 			putchar(' ');
@@ -27,5 +33,6 @@ int main(void)
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
