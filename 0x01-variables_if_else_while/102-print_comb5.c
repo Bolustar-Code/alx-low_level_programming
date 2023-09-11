@@ -15,7 +15,7 @@ int main(void)
 	int y_ones;
 	for (x = 0; x <= 99; x++)
 	{
-		for (y = x; y <= 99; y++)
+		for (y = x + 1; y <= 99; y++)
 		{
 			x_tens = x / 10;
 			x_ones = x % 10;
@@ -26,7 +26,7 @@ int main(void)
 			putchar(' ');
 			putchar(y_tens + '0');
 			putchar(y_ones + '0');
-			if (x != 99 || y != 99) 
+			if (x != 99 || y != 99)
 			{
 				putchar(',');
 				putchar(' ');
