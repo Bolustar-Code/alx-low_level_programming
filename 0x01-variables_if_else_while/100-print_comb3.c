@@ -3,8 +3,8 @@
 /**
 * main - Entry point
 * Purpose- possible different combinations of two digits.
-* Return: each time 0 
-*/
+* Return: each time 0
+* */
 int main(void)
 {
 	int x;
