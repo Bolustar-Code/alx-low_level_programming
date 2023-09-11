@@ -7,36 +7,25 @@
  */
 int main(void)
 {
-	int tho;
-	int hun;
-	int ten;
-	int bas;
-
-for ( tho = 0 ; tho < 10 ; tho++)
-{	
-
-	for (hun = 0 ; hun <= 10 ; hun++)
+	for (int x = 0; x <= 99; x++)
 	{
-	
-		for (ten = 0 ; ten < 10 ; ten++)
+		for (int y = x; y <= 99; y++)
 		{
-			for ( bas = 0 ; bas < 10 ; bas++)
+			int x_tens = x / 10;
+			int x_ones = x % 10;
+			int y_tens = y / 10;
+			int y_ones = y % 10;
+			putchar(x_tens + '0');
+			putchar(x_ones + '0');
+			putchar(' ');
+			putchar(y_tens + '0');
+			putchar(y_ones + '0');
+			if (x != 99 || y != 99) 
 			{
-				putchar('0' + tho);
-				putchar('0' + hun);
-				putchar(32);
-				putchar('0' + ten);
-				putchar('0' + bas);
-				if (!(tho == 9 && hun == 8))
-				{
-					putchar(',');
-					putchar(32);
-				}
-				bas++;
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-}
-	putchar('\n');
 	return (0);
 }
