@@ -11,7 +11,7 @@ int main(void)
 	unsigned long f1_s1, f1_s2, f2_s1, f2_s2;
 	unsigned long s1, s2;
 
-	for (inc = 0; inc < 92; inc++)
+	for (fibn = 0; fibn < 92; fibn++)
 	{
 		f3 = f1 + f2;
 		printf("%lu, ", f3);
