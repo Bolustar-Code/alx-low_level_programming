@@ -10,17 +10,22 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int convetnum = 0;
+	int x;
+	unsigned int convetnum;
 
-	if (b == NULL)
-	return (0);
-
-	while (*b != '\0')
-	{
-		if (*b != '0' && *b != '1')
+	convetnum = 0;
+	if (!b)
 		return (0);
-		convetnum = (convetnum << 1) | (*b - '0');
-		b++;
+	for (x = 0; b[x] != '\0'; x++)
+	{
+		if (b[x] != '0' && b[x] != '1')
+			return (0);
+	}
+	for (x = 0; b[x] != '\0'; x++)
+	{
+		convetnum <<= 1;
+		if (b[x] == '1')
+			convetnum += 1;
 	}
 	return (convetnum);
 }
