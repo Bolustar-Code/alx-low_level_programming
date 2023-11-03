@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
+#include "main.h"
 
 /**
  * create_file - Creates a file with specified
@@ -14,28 +11,30 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, result, text_length;
+	int file_descriptor;
+	int num_letters;
+	int bytes_written;
 
-	if (filename == NULL)
-		return (-1);
-
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	if (fd == -1)
+	if (!filename)
 	return (-1);
 
-	if (text_content != NULL)
+	file_descriptor = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+
+	if (file_descriptor == -1)
+	return (-1);
+
+	if (!text_content)
+	text_content = "";
+
+	for (num_letters = 0; text_content[num_letters]; num_letters++);
+
+	bytes_written = write(file_descriptor, text_content, num_letters);
+
+	if (bytes_written == -1)
 	{
-		for (text_length = 0; text_content[text_length] != '\0'; text_length++)
-		continue;
-
-		result = write(fd, text_content, text_length);
-		if (result == -1)
-		{
-			close(fd);
-			return (-1);
-		}
+		close(file_descriptor);
+		return (-1);
 	}
-
-	close(fd);
+	close(file_descriptor);
 	return (1);
 }
